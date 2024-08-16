@@ -1,9 +1,9 @@
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 import { connectDB } from './config/db';
-import { corsConfig } from './config/cors';
+import { corsMiddleware } from './config/cors';
 import clientRoutes from './routes/clientRoutes';
 
 // Llamamos la dependencia de dotenv para usarla en la API.
@@ -15,7 +15,7 @@ connectDB();
 const app = express();
 
 // Configuración de CORS
-app.use(cors(corsConfig));
+app.use(corsMiddleware());
 
 // Para registrar todas las llamadas de la API utilizamos esta dependencia llamada Morgan, a la que le pasamos 'dev' para indicarle el formato que queremos usar.
 app.use(morgan('dev'));
