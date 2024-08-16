@@ -36,6 +36,8 @@ export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => c
       return callback(null, true);
     }
 
+    console.log(origin);
+
     if (!origin) {
       return callback(null, true);
     }
