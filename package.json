@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juan2284/distribuidora_hernan.git"
+    "url": "git+https://github.com/juan2284/dist_hernan_front.git"
   },
   "keywords": [
     "api",
@@ -20,9 +20,9 @@
   "author": "Juan Rodriguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juan2284/distribuidora_hernan/issues"
+    "url": "https://github.com/juan2284/dist_hernan_front/issues"
   },
-  "homepage": "https://github.com/juan2284/distribuidora_hernan#readme",
+  "homepage": "https://github.com/juan2284/dist_hernan_front#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",
