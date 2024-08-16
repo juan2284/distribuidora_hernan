@@ -7,9 +7,6 @@ export const corsConfig: CorsOptions = {
     // Definimos la lista de origenes permitidos.
     const whiteList = [process.env.FRONTEND_URL];
 
-    console.log(origin);
-    console.log(whiteList);
-
     // Revisamos si existe la bandera que establecimos en el script del package, con el que revisaremos si estamos en desarrollo, para permitir el origen indefinido.
     if (process.argv[2] === '--api') {
       whiteList.push(undefined);
